@@ -43,6 +43,40 @@ print("Union of set1 and set2:", union_set)
 intersection_set = set1.intersection(set2)
 print(intersection_set)
 
+# Function definition
+def greet():
+    print("Hello! Welcome to Python functions.")
+
+# Function call
+greet()
+
+# 🔁 8️⃣ Recursion (Function Calling Itself)
+# Concept: Jab ek function apne aap ko call karta hai.
+# Example – Factorial using recursion
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n -1)
+print("factorial of 5 is:", factorial(5))
+
+# 🧠 7️⃣ Return Statement
+# Concept: Function se value return karne ke liye use hota hai.
+def square(num):
+    return num * num
+result = square(6)
+print("Square is:", result)
+
+
+# 🧱 9️⃣ Base Condition in Recursion
+# Concept: Recursion me base condition stopping point hota hai.
+def countdown(n):
+    if n==0:
+        print("Time's up!")
+    else:
+        print(n)
+        countdown(n-1)
+countdown(5)
 
 
 
