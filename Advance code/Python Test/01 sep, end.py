@@ -150,11 +150,34 @@ greet_by_name(3.14)
 
 def say_hello_user(name):
     print("Hello,", name)
-
-
 user_name = input("Enter the name : \n")
-
 say_hello_user(user_name)
+
+
+def print_mul_arguments(*args):
+    # *args -> List
+    for i in args:
+        print(i)
+print_mul_arguments("pramod1\n")
+print_mul_arguments("pramod", "amit", "lucky")
+print_mul_arguments("amit", 10, True, False, "PRAMOD")
+
+
+def make_pizza(*toppings):
+    print(toppings)
+    for i in toppings:
+        print(i)
+pramod = make_pizza("tomato","olives")
+jayati = make_pizza("pineapple","olives","corn","paneer")
+vinay = make_pizza("tomato")
+
+
+def max(*args):
+    for i in args:
+        print(i)
+r1 = max(1, 2, 3, 4, 6)
+r2 = max(1, 2, 3)
+r2 = max(2, 3)
 
 
 
