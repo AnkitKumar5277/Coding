@@ -84,37 +84,26 @@ sample.name = "vikky" # class attribute / you can change class attrubute
 print(sample.name) 
 print(obj.name) 
 
-# print(jack.address) -> error address is not present in instance / class attribue
-
 # self
-'''
 class Employee:
   company = "IBM"
   def getSalary(self):
     print(f"employee of {self.company} is {self.salary}")
-
 ankit = Employee()
 ankit.salary = 100000
 ankit.getSalary() # Employee.getSalary(ankit) #print the function components
-'''
 
 # static method
-'''
 class Person:
   company = "Adobe"
-  @staticmethod
+  @staticmethod  # mark decorate
   def greet():
     print("Good Morining, Sir")
-
 ankit = Person()
-# ankit.salary = 100000
-# ankit.greet() #Person.greet(ankit)
 Person.greet() #--> this is the statice method run code
 # or ankit.greet()
-'''
 
 # another example
-'''
 class Employee:
   company = "META"
   def getsalary(self, signature):
@@ -132,17 +121,18 @@ ankit.salary = 100000
 ankit.getsalary("Thanks") # signature passed
 ankit.greet() # Employee.greet()
 ankit.time()
-'''
 
 # constructor
-'''
-class Employee:
-  def __init__(self, name):
-    self.name = name
-
-ankit = Employee("ankit kumar")
-ankit.getDetails()
-'''
+class Programmer:
+  company = "Software X"
+  def __init__(self, name, salary, pin):
+      self.name = name
+      self.salary = salary
+      self.pin = pin
+p = Programmer("Ankit", 10000, 110033)
+print(p.name, p.salary, p.pin, p.company)
+r = Programmer("Shyam", 12000, 24001)
+print(r.name, r.salary, r.pin, r.company)
 
 # another example
 class Employee:
@@ -161,5 +151,6 @@ class Employee:
 harry = Employee("Harry", 100, "YouTube")
 # harry = Employee() --> This throws an error (missing 3 required positional arguments:)
 harry.getDetails()
+
 
 
