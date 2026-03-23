@@ -59,3 +59,7 @@ print(next(my_iterator))  # Output: 1
 print(next(my_iterator))  # Output: 2
 print(next(my_iterator))  # Output: 3
 # If you call next() again, it raises StopIteration (no more elements)
+
+x = [1, 2, 3]
+y = [1, 2, 3]
+print(x is y)  # Output: False (lists are different objects in memory)
