@@ -13,3 +13,12 @@ print(my_dict)  # Output: {'name': 'Amit', 'age': 21, 'city': 'Delhi', 'job': 'S
 fruits = ["apple", "banana", "orange"]
 print("apple" in fruits)  # Output: True
 print("grape" in fruits)  # Output: False
+
+# Python Program to Merge Two Dictionaries
+d1 = {1:'a', 2:'b'}
+d2 = {2:'c', 4:'d'}
+print(d1|d2)
+# {1: 'a', 2: 'c', 4: 'd'}
+
+
+
