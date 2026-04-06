@@ -1,4 +1,19 @@
-
+my_str = "Hello this Is an Example With cased letters"
+words = [word.lower() for word in my_str.split()]
+words.sort()
+print("the sorted words are:")
+for word in words:
+  print(word)
+# # ouput
+# The sorted words are:
+# an
+# cased
+# example
+# hello
+# is
+# letters
+# this
+# with
 
 # Python Program to Find Sum of Natural Numbers Using Recursion
 def sum(n):
