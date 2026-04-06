@@ -1,3 +1,7 @@
+print(x and y)  # False
+print(x or y)   # True
+print(not x)    # False
+
 def count_leap_years(start_year, end_year):
     leap_years = 0
     for year in range(start_year, end_year + 1):
