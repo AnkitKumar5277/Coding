@@ -1,3 +1,6 @@
+l = [i*7 for i in range(1,11)]
+print(l)
+
 # Example 10: Floyd's Triangle
 # 1
 # 2 3
