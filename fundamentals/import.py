@@ -1,3 +1,8 @@
+# 1. create two virtual environments, install few packages in the first one. how do you create similer Environment in the second one ?
+
+# type virtualenv ak in shell or terminal
+
+
 import keyword
 print(keyword.kwlist)
 
