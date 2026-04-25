@@ -1,3 +1,8 @@
+# another second method enumerate function
+list = [9,7,4,2]
+for index, item in enumerate(list):
+  print(item, index)
+
 # enumerate function
 list = [2,3,9,3,1]
 index = 0 
