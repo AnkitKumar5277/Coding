@@ -1,142 +1,15 @@
-# Advance 1 -> Exception Handling In Python
 
 '''
-while(True):
-  print("Press q to quit")
-  a = input("Enter a number : ")
-  if a == 'q':
-    break
-  try:
-    print("Tring...")
-    a = int(a)
-    if a > 6:
-      print("You Entered a number greater thann 6")
-  except Exception as e:
-    print(f"Your resulted in an error: {e}")
 
-print("Thanks for playing this game")  
-'''
 
-# Example 2 error of result
-'''
-try:
-  a = int(input("Enter a number : "))
-  c = 1 / a
-  print(c)
-
-except Exception as e:
-  print("Exception occured")
-  # print(e) # -> gives result of error
-
-print("Thanks for using this code")
-'''
-
-# Example 3 multiple errors
-'''
-try:
-  a = int(input("Enter a number : "))
-  c = 1/a
-  print(c)
-
-except ValueError as e:
-  print("Please Enter a valid Value")
-
-except ZeroDivisionError as e:
-  print("Make sure you are not dividing by 0")
-
-print("Thanks for using this code")
-'''
-
-# Example 4 add / Raising exceptions
-'''
-def increment(num):
-  try:
-    return int(num) + 1
-  except:
-    raise ValueError("This is not good- Harry")
-
-a = increment('D50')
-print(a)
-'''
-
-# Example 5 else / try with else clause
-'''
-try:
-  i = int(input("Enter a number"))
-  c = 1 / i
-except Exception as e:
-  print(e)
-
-else:
-  print("We were Successful")
-'''
-
-# try except with finally
-'''
-try:
-  i = int(input("Entera number"))
-  c = 1/i
-
-except Exception as e:
-  print(e)
-  exit()
-
-finally:
-  print("We are done") # prints both case
-
-print("thanks for using the program") # when prints you input right
 '''
 
 
-# global & local variable
-'''
-a = 4 # global variable
-def func1():
-  global a
-  print(f"Print statement 1: {a}")
-  a = 8 # local variable if global keyword is not used
-  print(f"print statement 2: {a}")
-
-func1()
-print(f"print statement 3: {a}")
-'''
-
-# enumerate function
-'''
-list = [2,3,9,3,1]
-index = 0 
-for item in list:
-  print(item, index)
-  index += 1
-'''
-
-# another second method enumerate function
-'''
-list = [9,7,4,2]
-for index, item in enumerate(list):
-  print(item, index)
   '''
 
-# comprehension
-'''
-a = [1,8,3,2,9]
-b = []
-for item in a:
-  if item % 2 == 0:
-    b.append(item)
-
-print(b)
 '''
  
-# another second method of comprehension
+
 '''
-a = [3,9,2,8]
-b = [i for i in a if i%2 == 0]
-print(b) 
-'''
-# set comprehension
-'''
-s = [2,9,9,2,4,2,0]
-r = {i for i in s}
-print(r)
+
 '''
