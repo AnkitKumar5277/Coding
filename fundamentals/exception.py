@@ -1,3 +1,13 @@
+# Example 5 else / try with else clause
+try:
+  i = int(input("Enter a number"))
+  c = 1 / i
+except Exception as e:
+  print(e)
+
+else:
+  print("We were Successful")
+
 # Example 4 add / Raising exceptions
 def increment(num):
   try:
