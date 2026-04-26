@@ -1,3 +1,8 @@
+# format method
+name = "ankit"
+a = f"this is {name}"
+print(a)
+
 l = [str(i*7) for i in range(1,11)]
 print(l)
 verticalTable = "\n".join(l)
