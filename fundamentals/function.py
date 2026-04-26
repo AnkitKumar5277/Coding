@@ -1,3 +1,20 @@
+# lambda function
+def func(a):
+  return a+5
+
+x = 4
+print(func(x))
+
+# another method
+func = lambda a: a + 8
+square = lambda x: x*x
+sum = lambda a, b, c: a+b+c
+
+x = 2
+print(func(x))
+print(square(x))
+print(sum(x,1,3))
+
 # global & local variable
 a = 4 # global variable
 def func1():
