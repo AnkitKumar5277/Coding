@@ -1,3 +1,29 @@
+s = "Ankit"
+print(s[::2])
+print(s[::-1])
+print(s[:])
+# Akt
+# tiknA
+# Ankit
+
+# capitalize
+text = "hello"
+capitalized = text[0].upper() + text[1:]
+print(capitalized)  # Output: Hello
+
+demo_string='ROSES'
+print(demo_string.lower())
+
+text = "hello"
+capitalized = text.capitalize()
+print(capitalized)  # Output: Hello
+
+# split()
+x = "this is example of split method"
+a = x.split()
+print(a)
+# ['this', 'is', 'example', 'of', 'split', 'method']
+
 name = "ankit"
 channel = "software - X"
 type = "coding"
@@ -7,6 +33,10 @@ c = "this is {0} and his {2} channel is {1}".format(name, channel, type)
 print(a)
 print(b)
 print(c)
+
+template = " The name of the student is {}, his marks are {} phone number is {} "
+output = template.format(n,m,p)
+print(output)
 
 name = "This is a Big line"
 print(type(name))
