@@ -1,3 +1,60 @@
+# join in list and tuple() and iterate
+l = ["Camera", "Laptop", "Phone", "ipad", "Hard disk"]
+sentence = " and ".join(l)
+print(sentence)
+print(" or ".join(l))
+print("\n".join(l))
+print(type(sentence))
+# Camera and Laptop and Phone and ipad and Hard disk
+# Camera or Laptop or Phone or ipad or Hard disk
+# Camera
+# Laptop
+# Phone
+# ipad
+# Hard disk
+# <class 'str'>
+
+# reduce
+from functools import reduce
+sum = lambda a, b: a+b
+l = [1,2,3,4]
+val = reduce(sum,l)
+print(val)
+# 10
+
+l = [2,4,6,8,10]
+ak = lambda num: num > 7
+print(list(filter(ak,l)))
+# [8, 10]
+
+# filter
+# list(filter(function,l))
+def greater_than_5(num):
+  if num >5:
+    return True
+  else:
+    return False
+l=[1,2,3,4,5,6,7,8,9,10]
+print(list(filter(greater_than_5,l)))
+# [6, 7, 8, 9, 10]
+
+# another method
+def square(num):
+  return num * num
+l = [1,2,4]
+print(list(map(square,l)))
+# [1, 4, 16]
+
+# map
+def square(num):
+  return num * num
+l = [1,2,4]
+l2 = []
+for item in l:
+  l2.append(square(item))
+print(l2)
+# [1, 4, 16]
+
 l = [str(i*7) for i in range(1,11)]
 print(l)
 verticalTable = "\n".join(l)
