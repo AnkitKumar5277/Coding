@@ -71,3 +71,21 @@ direction = "left";   // ✅ Valid
 direction = "right";  // ✅ Valid
 console.log(direction);
 // right
+
+
+// Intersection Type (&)
+type Person = {
+  name: string;
+};
+type Employee = {
+  salary: number;
+};
+// Dono types ko combine kiya
+type EmployeeDetails = Person & Employee;
+let emp: EmployeeDetails = {
+  name: "Ankit",
+  salary: 50000
+};
+console.log(emp.name);    // Ankit
+console.log(emp.salary);  // 50000
+
