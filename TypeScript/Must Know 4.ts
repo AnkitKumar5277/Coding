@@ -63,6 +63,7 @@ console.log(user?.address?.city);
 function throwError(): never {
   throw new Error("Something went wrong!");
 }
+// Error: Something went wrong!
 
 // Literal Type
 let direction: "left" | "right";
