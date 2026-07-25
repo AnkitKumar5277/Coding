@@ -80,7 +80,6 @@ type Person = {
 type Employee = {
   salary: number;
 };
-// Dono types ko combine kiya
 type EmployeeDetails = Person & Employee;
 let emp: EmployeeDetails = {
   name: "Ankit",
@@ -88,4 +87,8 @@ let emp: EmployeeDetails = {
 };
 console.log(emp.name);    // Ankit
 console.log(emp.salary);  // 50000
-
+let value: unknown = "Hello TypeScript";
+// Type Assertion
+let text = value as string;
+console.log(text.toUpperCase());
+// HELLO TYPESCRIPT
