@@ -89,18 +89,14 @@ console.log("End");
 
 
 // call stack
-def greet():
-    print("Hello")
-def welcome():
-    greet()
-    print("Welcome")
-def main():
-    welcome()
-    print("Main End")
-main()
-// Hello
-// Welcome
-// Main End
+function one() {
+  console.log("One");
+}
+function two() {
+  one();
+  console.log("Two");
+}
+two();
 
 
 // Callback Function
