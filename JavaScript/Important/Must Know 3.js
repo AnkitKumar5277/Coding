@@ -5,6 +5,15 @@ let result = numbers.map(num => num * 2);
 console.log(result);
 // Output: [2, 4, 6, 8]
 
+// forEach()
+let fruits = ["Apple", "banana", "mango"];
+fruits.forEach(fruit => {
+    console.log(fruit);
+});
+// Apple
+// Banana
+// Mango
+
 // filter()
 let numbers = [1,2,3,4,5,6];
 let even = numbers.filter(num => num % 2 === 0);
@@ -22,15 +31,6 @@ let numbers = [5, 10, 15, 20];
 let result = numbers.find(num => num > 10);
 console.log(result);
 // output: 15
-
-// forEach()
-let fruits = ["Apple", "banana", "mango"];
-fruits.forEach(fruit => {
-    console.log(fruit);
-});
-// Apple
-// Banana
-// Mango
 
 // some()
 let numbers = [1, 3, 5, 8];
