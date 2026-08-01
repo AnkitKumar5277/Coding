@@ -157,6 +157,17 @@ list2 = copy.copy(list1)   # Shallow Copy
 list2[0][0] = 100
 print("Original:", list1)
 print("Copy:", list2)
+  
+
+# append
+a=[1,2]
+a.append([3,4])
+print(a) # [1,2,[3,4]]
+# extend
+b=[1,2]
+b.extend([3,4])
+print(b) # [1,2,3,4]
+
 
 # map function
 nums = [1,2,3]
