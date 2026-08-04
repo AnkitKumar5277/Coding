@@ -1,3 +1,12 @@
+// variables
+let age: number = 22;
+let name: string = "Ankit";
+let isStudent: boolean = true;
+let address: null = null;
+let phone: undefined = undefined;
+let skills: string[] = ["Playwright", "TypeScript", "SQL"];
+console.log("Age:", age);
+
 // Type Annotation
 let age: number = 25;
 console.log(age);
@@ -7,7 +16,7 @@ console.log(age);
 let value: any = "Hello";
 value = 100;
 value = true;
-// console.log(value); 
+console.log(value); 
 // 100
 // true
 
