@@ -17,7 +17,7 @@ export function add(a: number, b: number): number {
 // app.ts
 import { add } from "./math";
 console.log(add(10, 20));
-Output
+// Output
 // 30
 
 // optional parameters
