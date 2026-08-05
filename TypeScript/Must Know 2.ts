@@ -38,6 +38,11 @@ let text = value as sring;
 console.log(text.length);
 // 16
 
+let value: unknown = "Hello TypeScript";
+let text = value as string;
+console.log(text.toUpperCase());
+// HELLO TYPESCRIPT
+
 // Enum
 enum Status {
   Pass,
